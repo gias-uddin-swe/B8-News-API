@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News API</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center">
+          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+          <button class="btn btn-ghost btn-circle">
+            <div class="indicator">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                />
+              </svg>
+              <span class="badge badge-xs badge-primary indicator-item"></span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="tab-container w-full">
+      <div
+        class="tabs tabs p-5 w-96 m-auto text-center flex justify-center"
+        id="tab-container"
+      >
+        <!-- <a class="tab">Tab 1</a>
+        <a class="tab">Tab 2</a>
+        <a class="tab">Tab 3</a> -->
+      </div>
+    </div>
+
+    <div id="card-container" class="grid grid-cols-2 gap-4">
+      <!-- <div class="card w-96 bg-base-100 shadow-xl">
+        <figure>
+          <img
+            src="https://i.ibb.co/M23fhxm/unsplash-Eh-Tc-C9s-YXsw.png"
+            alt="Shoes"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Biden Pledges Nearly $3 Billion To Ukraine
+            <div class="badge badge-secondary p-5">Excellent</div>
+          </h2>
+          <p>
+            Wednesday, August 24, 2022 | Tag Cloud Tags: Biden, EU, Euro,
+            Europe, Joe Biden,
+          </p>
+          <div class="card-footer flex justify-between mt-8">
+            <div class="flex">
+              <div>
+                <div class="avatar online">
+                  <div class="w-14 rounded-full">
+                    <img
+                      src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h6>Jimmy Dane</h6>
+                <small>2022-08-24 17:27:34</small>
+              </div>
+            </div>
+            <div class="card-detaild-btn">
+              <button
+                class="inline-block cursor-pointer rounded-md bg-gray-800 px-4 py-3 text-center text-sm font-semibold uppercase text-white transition duration-200 ease-in-out hover:bg-gray-900"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <div id="modal-container" class="modal-container">
+
+    </div>
+
+    <!-- add javascript file from here  -->
+    <script src="./index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
